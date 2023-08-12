@@ -312,3 +312,57 @@ body {
 }
 
 /* Existing styles ... */
+/* Smaller screens (up to 600px) */
+@media (max-width: 600px) {
+    .bodypart {
+        padding: 0px 10px; /* Adjust padding for smaller screens */
+    }
+    
+    .sticky-header ul li {
+        margin-right: 10px; /* Reduce margin for smaller screens */
+    }
+
+    .sticky-header a {
+        font-size: 20px; /* Reduce font size for smaller screens */
+    }
+
+    .section {
+        font-size: medium; /* Adjust font size for smaller screens */
+    }
+
+    .sectionabout {
+        padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .split-section {
+        padding: 20px 20px; /* Adjust padding for smaller screens */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .split-section .content {
+        font-size: 24px; /* Reduce font size for smaller screens */
+    }
+
+    .split-section .image {
+        top: 100px; /* Adjust positioning for smaller screens */
+    }
+
+    .projects-grid {
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .project {
+        margin-bottom: 1rem; /* Reduce margin for smaller screens */
+    }
+
+    .clo3d-project {
+        width: 100%; /* Make projects full width for smaller screens */
+    }
+
+    .clo3d-project p {
+        font-size: 18px; /* Reduce font size for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    /* Add more responsive adjustments as needed */
+}
