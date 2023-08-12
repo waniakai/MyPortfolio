@@ -104,6 +104,7 @@ body {
     position: absolute;
     top: 200px;
     left: 10;
+    
     z-index: 2;
 }
 
@@ -314,6 +315,9 @@ body {
 /* Existing styles ... */
 /* Smaller screens (up to 600px) */
 @media (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+    }
     .bodypart {
         padding: 0px 10px; /* Adjust padding for smaller screens */
     }
@@ -336,7 +340,7 @@ body {
 
     .split-section {
         padding: 20px 20px; /* Adjust padding for smaller screens */
-        height: auto; /* Allow height to adjust */
+        height: 430px; /* Allow height to adjust */
     }
 
     .split-section .content {
@@ -345,6 +349,7 @@ body {
 
     .split-section .image {
         top: 100px; /* Adjust positioning for smaller screens */
+        width: 350px;
     }
 
     .projects-grid {
@@ -365,4 +370,26 @@ body {
     }
 
     /* Add more responsive adjustments as needed */
+}
+
+/* Smaller screens (up to 600px) */
+@media (max-width: 600px) {
+    .info-container {
+        flex-direction: column; /* Stack items vertically for smaller screens */
+        align-items: flex-start; /* Align items to the left */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .info-container p {
+        margin: 10px 0; /* Add margin between items for smaller screens */
+    }
+    
+    .info-grid {
+        gap: 10px; /* Adjust gap between items for smaller screens */
+        font-size: small;
+    }
+
+    .about-info h2 {
+        font-size: 24px; /* Reduce font size for smaller screens */
+    }
 }
